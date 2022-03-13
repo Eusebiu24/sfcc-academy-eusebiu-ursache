@@ -1,0 +1,25 @@
+<iscomment>
+  <isset name="sessionVar" value="${1}" scope="session" />
+</iscomment>
+
+<iscomment>
+  <isset name="Request" value="${11}" scope="request" />
+  ${request.custom.Request} </iscomment>
+<iscomment> ${pdict.CurrentRequest.custom.Request} </iscomment>
+
+<iscomment> ${session.custom.sessionVar} </iscomment>
+<iscomment> ${pdict.CurrentSession.custom.sessionVar} </iscomment>
+
+<iscomment>
+  <isset name="pageVar" value="${10}" scope="page" />
+
+  ${pageVar + 1} </iscomment>
+
+<isset name="productID" value="${pdict.myProduct.ID}" scope="page" />
+
+<iscomment>
+  <isinclude template="product/productTile" />
+</iscomment>
+
+<isinclude
+  url="${URLUtils.url('Tile-Show', 'pid', productID, 'swatches', true, 'ratings', true, 'showQuickView', false)}" />

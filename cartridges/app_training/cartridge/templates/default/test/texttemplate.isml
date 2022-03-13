@@ -1,0 +1,3 @@
+<isset name="x" value="12343" scope="page" />
+
+${x}

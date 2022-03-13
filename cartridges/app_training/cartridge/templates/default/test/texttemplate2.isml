@@ -1,0 +1,2 @@
+<isinclude
+  url="${URLUtils.url('ShowProduct-RenderTemplate', 'pid', 'swatches', true, 'ratings', true, 'showQuickView', false)}" />

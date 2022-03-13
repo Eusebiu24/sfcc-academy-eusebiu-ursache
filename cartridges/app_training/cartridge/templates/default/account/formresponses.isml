@@ -1,0 +1,26 @@
+<isdecorate template="common/layout/page">
+  <iscontent type="text/html" charset="UTF-8" compact="true">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 type="text" id="title2">
+            <isprint value="${pdict.forme.test.title.description}" encoding="htmlcontent" />
+          </h1>
+          <form action="${URLUtils.url('Account-Showw')}" class="form-control-label" method="POST"
+            name="${pdict.forme.htmlName}">
+
+            <p>First name: ${pdict.forme.test.firstname.value}</p>
+
+            <p>Last name: ${pdict.forme.test.lastname.value}</p>
+
+            <p>Email: ${pdict.forme.test.email.value}</p>
+
+            <iscomment>
+              <p> Back to <a href="${pdict.continueUrl}">Form</a>. </p>
+            </iscomment>
+
+          </form>
+        </div>
+      </div>
+    </div>
+</isdecorate>

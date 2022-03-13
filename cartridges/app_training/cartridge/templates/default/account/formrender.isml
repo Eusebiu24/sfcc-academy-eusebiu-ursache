@@ -1,0 +1,91 @@
+<isdecorate template="common/layout/page">
+  <h1>
+    <isprint value="${pdict.title}" encoding="htmlcontent" />
+  </h1>
+  <form action="${URLUtils.url('Account-Submit')}" class="edit-profile-form" method="POST"
+    name="${pdict.forme.htmlName}">
+
+    <div class="form-group
+        <isif condition=" ${!!pdict.forme.test.firstname.mandatory === true}">required</isif>">
+      <label class="form-control-label" for="firstname">
+        <isprint value="${pdict.forme.test.firstname.label}" encoding="htmlcontent" />
+
+      </label>
+      <input type="text" class="form-control" id="firstname" <isprint value=${pdict.forme.test.firstname.attributes}
+        encoding="off" />
+      >
+      <div class="invalid-feedback" id="form-fname-error"></div>
+    </div>
+
+    <div class="form-group
+        <isif condition=" ${!!pdict.forme.test.lastname.mandatory === true}">required</isif>">
+      <label class="form-control-label" for="lastname">
+        <isprint value="${pdict.forme.test.lastname.label}" encoding="htmlcontent" />
+      </label>
+      <input type="text" class="form-control" id="lastname" <isprint value=${pdict.forme.test.lastname.attributes}
+        encoding="off" />>
+      <div class="invalid-feedback" id="form-lname-error"></div>
+    </div>
+
+    <div class="form-group">
+      <label class=" form-control-label" for="email">
+        <isprint value="${pdict.forme.test.email.label}" encoding="htmlcontent" />
+      </label>
+      <input type="text" class="form-control" id="email" <isprint value=${pdict.forme.test.email.attributes}
+        encoding="off" />>
+    </div>
+
+    <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
+
+    <button type="submit" class="btn btn-block btn-primary">
+      ${Resource.msg('button.senddata.profile', 'forms', null)}
+    </button>
+  </form>
+</isdecorate>
+
+
+
+
+<iscomment>
+  <isdecorate template="common/layout/page">
+    <h1>
+      <isprint value="${pdict.title}" encoding="htmlcontent" />
+    </h1>
+    <form action="${URLUtils.url('Account-SubmitRegistration')}" class="edit-profile-form" method="POST"
+      name="${pdict.profileForm.htmlName}">
+      <div class="form-group
+        <isif condition=" ${!!pdict.profileForm.test.firstname.mandatory === true}">required</isif>">
+        <label class="form-control-label" for="firstname">
+          <isprint value="${pdict.profileForm.test.firstname.label}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="firstname" <isprint
+          value=${pdict.profileForm.test.firstname.attributes} encoding="off" />>
+        <div class="invalid-feedback" id="form-fname-error"></div>
+      </div>
+
+      <div class="form-group
+        <isif condition=" ${!!pdict.profileForm.test.lastname.mandatory === true}">required</isif>">
+        <label class="form-control-label" for="lastname">
+          <isprint value="${pdict.profileForm.test.lastname.label}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="lastname" <isprint
+          value=${pdict.profileForm.test.lastname.attributes} encoding="off" />>
+        <div class="invalid-feedback" id="form-lname-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label class=" form-control-label" for="email">
+          <isprint value="${pdict.profileForm.test.email.label}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="email" <isprint value=${pdict.profileForm.test.email.attributes}
+          encoding="off" />>
+      </div>
+
+      <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
+
+      <button type="submit" class="btn btn-block btn-primary">
+        ${Resource.msg('button.createaccount.registration', 'registration', null)}
+      </button>
+    </form>
+  </isdecorate>
+</iscomment>

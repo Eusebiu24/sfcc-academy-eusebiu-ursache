@@ -1,0 +1,7 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+
+
+
+<div class="footer-item col-sm-3 collapsible-xs">
+  <iscontentasset aid="footer-account" />
+</div>
