@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="ursache24george.eusebiu@gmail.com" enabled-flag="true">
+        <credentials>
+            <external-id>4315a29a-2999-43ce-b31c-d4575a23e53d</external-id>
+        </credentials>
+        <profile>
+            <first-name>George</first-name>
+            <last-name>Ursache</last-name>
+            <email>ursache24george.eusebiu@gmail.com</email>
+        </profile>
+    </user>
+
+</users>
