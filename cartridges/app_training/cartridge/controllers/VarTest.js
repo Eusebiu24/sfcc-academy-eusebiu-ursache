@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-var server = require('server');
+var server = require("server");
 
 // server.extend(module.superModule)
 
-server.get('Hello', function (req, res, next) {
-  
-  res.render("test/vartest");
-  return next();
+server.get("Hello", function (req, res, next) {
+    
+    res.render("test/vartest");
+    return next();
   
 });
 

@@ -1,14 +1,14 @@
-'use strict';
+// 'use strict';
 
-var server = require('server');
+// var server = require('server');
 
-// server.extend(module.superModule)
+// // server.extend(module.superModule)
 
-// server.get('HelloWorld', function (req, res, next) {
-//   // var myvariable = "Just a string"
-//   res.render("training/myfirsttemplate", { myvariable: myvariable });
-//   return next();
-// });
+// // server.get('HelloWorld', function (req, res, next) {
+// //   // var myvariable = "Just a string"
+// //   res.render("training/myfirsttemplate", { myvariable: myvariable });
+// //   return next();
+// // });
 
-// module.exports = server.exports();
+// // module.exports = server.exports();
 

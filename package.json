@@ -45,14 +45,19 @@
     "sass-loader": "^7.3.1",
     "terser-webpack-plugin": "^2.2.1",
     "webpack": "^4.41.0",
-    "webpack-command": "^0.4.2"
+    "webpack-command": "^0.4.2",
+    "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
+    "all": "^0.0.0",
     "bootstrap": "^4.3.1",
     "cleave.js": "^1.5.3",
     "css-vars-ponyfill": "^2.1.2",
     "flag-icon-css": "^2.9.0",
     "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-stylelint": "^13.0.0",
     "isml-linter": "^5.22.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.6",

@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
  
-var server = require('server');
+var server = require("server");
  
-server.get('Basket', function (req, res, next) {
+server.get("Basket", function (req, res, next) {
     var BasketMgr = require("dw/order/BasketMgr");
     var Basket = BasketMgr.getCurrentBasket();
  
